@@ -1,0 +1,5 @@
+C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/CMakeFiles/edit_cache.dir
+C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/CMakeFiles/rebuild_cache.dir
+C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/boards/payload_ctrl/CMakeFiles/payload_ctrl.dir
+C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/boards/payload_ctrl/CMakeFiles/edit_cache.dir
+C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/boards/payload_ctrl/CMakeFiles/rebuild_cache.dir

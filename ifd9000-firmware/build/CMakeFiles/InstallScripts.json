@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/cmake_install.cmake",
+		"C:/Users/tanoo/Desktop/AG1/Miscellaneous/Infravision/Firmware Code/ifd9000-firmware/build/boards/payload_ctrl/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

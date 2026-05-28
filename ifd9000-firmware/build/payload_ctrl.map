@@ -107,6 +107,10 @@ Discarded input sections
  .text          0x00000000        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
  .data          0x00000000        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
  .bss           0x00000000        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .rodata.DBG_VM
+                0x00000000        0x4 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .rodata.DBG_IM
+                0x00000000        0x4 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
  .text          0x00000000       0x14 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
  .data          0x00000000        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
  .bss           0x00000000        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
@@ -673,7 +677,7 @@ LOAD C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../li
  *(.isr_vector*)
                 0x080000c0                        . = ALIGN (0x4)
 
-.text           0x080000c0      0x500
+.text           0x080000c0      0x9d0
                 0x080000c0                        . = ALIGN (0x4)
  *(.text)
  *(.text*)
@@ -692,80 +696,89 @@ LOAD C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../li
                 0x08000298       0xb0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
  .text.AD5144_StoreEEPROM
                 0x08000348       0x4a boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
- *fill*         0x08000392        0x2 
- .text.main     0x08000394      0x1d8 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
-                0x08000394                main
+ .text.mux1_select
+                0x08000392       0x7a boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .text.mux2_select
+                0x0800040c       0x54 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .text.all_enables_on
+                0x08000460       0x30 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .text.all_enables_off
+                0x08000490       0x34 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .text.adc_read_ch
+                0x080004c4       0xcc boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .text.main     0x08000590      0x4ac boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+                0x08000590                main
  .text.Reset_Handler
-                0x0800056c       0x50 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
-                0x0800056c                Reset_Handler
+                0x08000a3c       0x50 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+                0x08000a3c                Reset_Handler
  .text.Default_Handler
-                0x080005bc        0x2 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
-                0x080005bc                TIM1_CC_IRQHandler
-                0x080005bc                HardFault_Handler
-                0x080005bc                SysTick_Handler
-                0x080005bc                PendSV_Handler
-                0x080005bc                NMI_Handler
-                0x080005bc                I2C1_IRQHandler
-                0x080005bc                FDCAN1_IT1_IRQHandler
-                0x080005bc                SPI1_IRQHandler
-                0x080005bc                USART3_4_IRQHandler
-                0x080005bc                EXTI2_3_IRQHandler
-                0x080005bc                ADC1_IRQHandler
-                0x080005bc                I2C2_IRQHandler
-                0x080005bc                TIM17_IRQHandler
-                0x080005bc                RTC_IRQHandler
-                0x080005bc                TIM16_IRQHandler
-                0x080005bc                TIM3_IRQHandler
-                0x080005bc                EXTI4_15_IRQHandler
-                0x080005bc                RCC_IRQHandler
-                0x080005bc                DMA1_Channel1_IRQHandler
-                0x080005bc                Default_Handler
-                0x080005bc                TIM14_IRQHandler
-                0x080005bc                TIM15_IRQHandler
-                0x080005bc                EXTI0_1_IRQHandler
-                0x080005bc                SPI2_IRQHandler
-                0x080005bc                SVC_Handler
-                0x080005bc                WWDG_IRQHandler
-                0x080005bc                FDCAN1_IT0_IRQHandler
-                0x080005bc                TIM2_IRQHandler
-                0x080005bc                DMA1_Channel2_3_IRQHandler
-                0x080005bc                DMAMUX1_DMA1_CH4_5_IRQHandler
-                0x080005bc                USART2_IRQHandler
-                0x080005bc                FLASH_IRQHandler
-                0x080005bc                USART1_IRQHandler
-                0x080005bc                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x08000a8c        0x2 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+                0x08000a8c                TIM1_CC_IRQHandler
+                0x08000a8c                HardFault_Handler
+                0x08000a8c                SysTick_Handler
+                0x08000a8c                PendSV_Handler
+                0x08000a8c                NMI_Handler
+                0x08000a8c                I2C1_IRQHandler
+                0x08000a8c                FDCAN1_IT1_IRQHandler
+                0x08000a8c                SPI1_IRQHandler
+                0x08000a8c                USART3_4_IRQHandler
+                0x08000a8c                EXTI2_3_IRQHandler
+                0x08000a8c                ADC1_IRQHandler
+                0x08000a8c                I2C2_IRQHandler
+                0x08000a8c                TIM17_IRQHandler
+                0x08000a8c                RTC_IRQHandler
+                0x08000a8c                TIM16_IRQHandler
+                0x08000a8c                TIM3_IRQHandler
+                0x08000a8c                EXTI4_15_IRQHandler
+                0x08000a8c                RCC_IRQHandler
+                0x08000a8c                DMA1_Channel1_IRQHandler
+                0x08000a8c                Default_Handler
+                0x08000a8c                TIM14_IRQHandler
+                0x08000a8c                TIM15_IRQHandler
+                0x08000a8c                EXTI0_1_IRQHandler
+                0x08000a8c                SPI2_IRQHandler
+                0x08000a8c                SVC_Handler
+                0x08000a8c                WWDG_IRQHandler
+                0x08000a8c                FDCAN1_IT0_IRQHandler
+                0x08000a8c                TIM2_IRQHandler
+                0x08000a8c                DMA1_Channel2_3_IRQHandler
+                0x08000a8c                DMAMUX1_DMA1_CH4_5_IRQHandler
+                0x08000a8c                USART2_IRQHandler
+                0x08000a8c                FLASH_IRQHandler
+                0x08000a8c                USART1_IRQHandler
+                0x08000a8c                TIM1_BRK_UP_TRG_COM_IRQHandler
  *(.glue_7)
- .glue_7        0x080005be        0x0 linker stubs
+ .glue_7        0x08000a8e        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080005be        0x0 linker stubs
+ .glue_7t       0x08000a8e        0x0 linker stubs
  *(.rodata)
  *(.rodata*)
-                0x080005c0                        . = ALIGN (0x4)
- *fill*         0x080005be        0x2 
-                0x080005c0                        _etext = .
-                0x080005c8                        _sidata = LOADADDR (.data)
+                0x08000a90                        . = ALIGN (0x4)
+ *fill*         0x08000a8e        0x2 
+                0x08000a90                        _etext = .
+                0x08000a98                        _sidata = LOADADDR (.data)
 
-.vfp11_veneer   0x080005c0        0x0
- .vfp11_veneer  0x080005c0        0x0 linker stubs
+.vfp11_veneer   0x08000a90        0x0
+ .vfp11_veneer  0x08000a90        0x0 linker stubs
 
-.v4_bx          0x080005c0        0x0
- .v4_bx         0x080005c0        0x0 linker stubs
+.v4_bx          0x08000a90        0x0
+ .v4_bx         0x08000a90        0x0 linker stubs
 
-.init           0x080005c0        0x4
- .init          0x080005c0        0x4 C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crti.o
-                0x080005c0                _init
+.init           0x08000a90        0x4
+ .init          0x08000a90        0x4 C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crti.o
+                0x08000a90                _init
 
-.fini           0x080005c4        0x4
- .fini          0x080005c4        0x4 C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crti.o
-                0x080005c4                _fini
+.fini           0x08000a94        0x4
+ .fini          0x08000a94        0x4 C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v6-m/nofp/crti.o
+                0x08000a94                _fini
 
-.iplt           0x080005c8        0x0
- .iplt          0x080005c8        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+.iplt           0x08000a98        0x0
+ .iplt          0x08000a98        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
 
-.rel.dyn        0x080005c8        0x0
- .rel.iplt      0x080005c8        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+.rel.dyn        0x08000a98        0x0
+ .rel.iplt      0x08000a98        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
 
-.data           0x20000000        0x0 load address 0x080005c8
+.data           0x20000000        0x0 load address 0x08000a98
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -773,10 +786,10 @@ LOAD C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../li
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _edata = .
 
-.igot.plt       0x20000000        0x0 load address 0x080005c8
+.igot.plt       0x20000000        0x0 load address 0x08000a98
  .igot.plt      0x20000000        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
 
-.bss            0x20000000        0x0 load address 0x080005c8
+.bss            0x20000000        0x0 load address 0x08000a98
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sbss = .
  *(.bss)
@@ -786,7 +799,7 @@ LOAD C:/Program Files/Arm/GNU Toolchain mingw-w64-x86_64-arm-none-eabi/bin/../li
                 0x20000000                        _ebss = .
 
 ._user_heap_stack
-                0x20000000      0x800 load address 0x080005c8
+                0x20000000      0x800 load address 0x08000a98
                 0x20000000                        . = ALIGN (0x8)
                 0x20000000                        PROVIDE (end = .)
                 0x20000400                        . = (. + 0x400)
@@ -810,39 +823,39 @@ LOAD linker stubs
  .comment       0x00000000       0x45 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
                                  0x46 (size before relaxing)
 
-.debug_info     0x00000000      0x5a5
- .debug_info    0x00000000      0x575 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
- .debug_info    0x00000575       0x30 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+.debug_info     0x00000000      0x78e
+ .debug_info    0x00000000      0x75e boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .debug_info    0x0000075e       0x30 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
 
-.debug_abbrev   0x00000000      0x1b5
- .debug_abbrev  0x00000000      0x191 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
- .debug_abbrev  0x00000191       0x24 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+.debug_abbrev   0x00000000      0x217
+ .debug_abbrev  0x00000000      0x1f3 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .debug_abbrev  0x000001f3       0x24 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
 
-.debug_aranges  0x00000000       0x78
+.debug_aranges  0x00000000       0xa0
  .debug_aranges
-                0x00000000       0x50 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+                0x00000000       0x78 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
  .debug_aranges
-                0x00000050       0x28 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+                0x00000078       0x28 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
 
 .debug_rnglists
-                0x00000000       0x61
+                0x00000000       0x80
  .debug_rnglists
-                0x00000000       0x48 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+                0x00000000       0x67 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
  .debug_rnglists
-                0x00000048       0x19 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+                0x00000067       0x19 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
 
-.debug_line     0x00000000      0x68c
- .debug_line    0x00000000      0x60f boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
- .debug_line    0x0000060f       0x7d boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+.debug_line     0x00000000      0xa2a
+ .debug_line    0x00000000      0x9ad boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+ .debug_line    0x000009ad       0x7d boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
 
-.debug_str      0x00000000      0x43e
- .debug_str     0x00000000      0x43e boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
-                                0x3ea (size before relaxing)
- .debug_str     0x0000043e        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
+.debug_str      0x00000000      0x4f2
+ .debug_str     0x00000000      0x4f2 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+                                0x49e (size before relaxing)
+ .debug_str     0x000004f2        0x0 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/bsp/startup_stm32c092xx.s.obj
                                  0xf8 (size before relaxing)
 
-.debug_frame    0x00000000       0xe8
- .debug_frame   0x00000000       0xe8 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
+.debug_frame    0x00000000      0x180
+ .debug_frame   0x00000000      0x180 boards/payload_ctrl/CMakeFiles/payload_ctrl.dir/app/main.c.obj
 
 .debug_line_str
                 0x00000000       0xdc
